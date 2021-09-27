@@ -18,18 +18,21 @@
 
                 <section class="gh-home-subscribe">
                     {{^if @member}}
-                        <h2 class="gh-home-subscribe-title">Stay tuned</h2>
-                        <p class="gh-home-subscribe-description">Don’t miss out on the latest issues. Sign up now to get access to the library of members-only issues.</p>
+                        <h2 class="gh-home-subscribe-title">Bądź na bieżąco</h2>
+                        <p class="gh-home-subscribe-description">Nie przegap najnowszych treści. Zapisz się teraz i
+                            uzyskaj dostęp do treści tylko dla zalogowanych.</p>
 
                         <a class="gh-home-subscribe-input" href="#/portal/signup">
-                            jamie@example.com
+                            adam@twojmail.pl
                             <span>{{> icons/arrow-right}}</span>
                         </a>
                     {{else}}
-                        <h2 class="gh-home-subscribe-title">Ready for unlimited access?</h2>
-                        <p class="gh-home-subscribe-description">Upgrade to a paid account to get full access to all content.</p>
+                        <h2 class="gh-home-subscribe-title">Chcesz dostępu bez limitu?</h2>
+                        <p class="gh-home-subscribe-description">Wykup płatne członkostwo i zdobądź pełny dostęp do
+                            treści na blogu.</p>
 
-                        <a class="gh-home-subscribe-btn gh-btn gh-primary-btn" href="#/portal/account/plans">Upgrade now</a>
+                        <a class="gh-home-subscribe-btn gh-btn gh-primary-btn"
+                           href="#/portal/account/plans">Wykup teraz</a>
                     {{/if}}
                 </section>
 
@@ -49,7 +52,7 @@
                             <header class="gh-article-header">
                                 <h2 class="gh-article-title">{{title}}</h2>
                                 <span class="gh-article-meta">
-                                    By {{primary_author.name}} —
+                                    Autor: {{primary_author.name}} —
                                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                                 </span>
                             </header>
@@ -78,14 +81,14 @@
                         </article>
 
                         <footer class="gh-home-latest-footer">
-                            <a class="gh-btn" href="{{url}}">Read latest issue</a>
+                            <a class="gh-btn" href="{{url}}">Przeczytaj najnowsze wydanie</a>
                         </footer>
                     {{/foreach}}
                 </section>
 
                 <div class="gh-home-latest-label">
                     <span class="gh-home-latest-indicator"></span>
-                    Latest issue
+                    Najnowsze wydanie
                 </div>
             </div>
         </div>

@@ -2,18 +2,18 @@
 
 <section class="gh-cta">
     {{#has visibility="paid"}}
-        <h4 class="gh-cta-title">This post is for paying subscribers only</h4>
+        <h4 class="gh-cta-title">Ten post jest tylko dla płacących subskrybentów</h4>
     {{/has}}
     {{#has visibility="members"}}
-        <h4 class="gh-cta-title">This post is for subscribers only</h4>
+        <h4 class="gh-cta-title">Ten post jest tylko dla zalogowanych uczestników</h4>
     {{/has}}
 
     <div class="gh-cta-actions">
         {{#if @member}}
-            <a class="gh-btn gh-primary-btn" href="#/portal/account/plans">Upgrade now</a>
+            <a class="gh-btn gh-primary-btn" href="#/portal/account/plans">Ulepsz dostęp</a>
         {{else}}
-            <a class="gh-btn gh-primary-btn" href="#/portal/signup">Subscribe now</a>
-            <a class="gh-cta-link" href="#/portal/signin">Already have an account? Sign in.</a>
+            <a class="gh-btn gh-primary-btn" href="#/portal/signup">Subskrybuj teraz</a>
+            <a class="gh-cta-link" href="#/portal/signin">Masz już konto? Zaloguj się.</a>
         {{/if}}
     </div>
 </section>
